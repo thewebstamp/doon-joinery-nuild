@@ -1,0 +1,108 @@
+.c-form {
+    margin: 0px 10vw 100px;
+    display: flex;
+    background: rgb(231, 231, 231);
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+    padding: 40px 50px 40px;
+}
+
+.c-form .c-form-top {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: min(45%, 440px);
+}
+
+.c-form .c-form-top input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    font-family: "Josefin Sans", serif;
+    font-size: 21px;
+    font-weight: 400;
+    color: black;
+}
+
+.c-form .c-form-top input, .c-form .c-form-top textarea {
+    width: 100%;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    background: hsla(221, 61%, 30%, 0.15);
+    outline: none;
+    padding: 6px 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.c-form .c-form-top textarea {
+    width: 100%;
+    height: 130px;
+    padding: 10px 15px 5px;
+    margin: 2px 0;
+}
+
+.c-form .c-form-top button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 7px rgba(2, 0, 0, 0.3);
+    font-family: "Outfit", serif;
+    font-weight: 500;
+    font-size: 20.5px;
+    letter-spacing: 0.5px;
+    background: black;
+    color: var(--sBackground-shade);
+    transition: 0.5s;
+    margin-top: 10px;
+}
+.c-form .c-form-top button:hover {
+    background: var(--sButton-alt);
+}
+
+.c-form .c-form-base {
+    position: relative;
+    width: 50%;
+}
+
+.c-form-base img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 1150px) {
+    .c-form {
+        margin: 0px 7vw 100px;
+        border-radius: 15px;
+        padding: 12px;
+    }
+    
+    .c-form .c-form-top {
+        gap: 12px;
+        width: 100%;
+    }
+    
+    .c-form .c-form-top input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+        font-size: 20px;
+    }
+    
+    .c-form .c-form-top input, .c-form .c-form-top textarea {
+        font-size: 19px;
+    }
+    
+    .c-form .c-form-top button {
+        font-size: 18.5px;
+    }
+    
+    .c-form .c-form-base {
+        display: none;
+    }
+}
+
+@media (max-width: 685px) {
+    .c-form {
+        margin: 0px 7.5vw 70px;
+        border-radius: 5px 5px 15px 15px;
+    }
+}
